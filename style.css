@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@400;600;700;800&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  width: 100%;
+  padding: 100px 0;
+}
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-text {
+  flex-basis: 45%;
+  max-width: 600px;
+}
+.stext {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.stext .cs {
+  
+  color: #fe4b2f;
+}
+.home-text p {
+  font-size: 20px;
+  font-family: Montserrat;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+.home-text .btn-a {
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  display: block;
+  height: 50px;
+  width: 155px;
+  background: linear-gradient(#fba24f, #ff1e1e);
+  font-size: 18px;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+.home-img {
+  flex-basis: 40%;
+  background-image: url(./images/shapes/Group 8449.png);
+}
+
+
+.home-img img {
+  height: 100%;
+  width: 100%;
+}
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(./images/shapes/7.png);
+}
+.about-img,
+.about-text {
+  flex-basis: 45%;
+}
+.about-text {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.about-text .btn-a {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+  background: linear-gradient(#fba24f, #ff1e1e);
+}
+.about-text .title {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: bold;
+  color: #707070;
+  margin-bottom: 10px;
+}
+.about-text p {
+  font-size: 18px;
+  font-family: Manrope;
+}
+.about-img img {
+  width: 100%;
+}
+#react {
+  padding: 100px 0;
+}
+.rec-text {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.rec-text .title {
+  font-size: 36px;
+  padding: 20px 0;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.rec-text p {
+  font-size: 20px;
+  
+}
+.food-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 0 10px;
+  margin: 0 auto;
+  background-color: #ffffffb7;
+  border-radius: 10px;
+}
+.food-card .card {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 5px 7px 30px 0px;
+}
+.food-card .card h3,
+p {
+  margin: 15px 0;
+}
+h3 {
+  text-align: center;
+  font-size: 28px;
+  font-family: Montserrat;
+  color: rgb(114, 211, 69);
+}
+.food-card .card p {
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+.food-card .card img {
+  width: 100%;
+}
+.footer {
+  height: 256px;
+  width: 100%;
+  text-align: center;
+  background: #0b0d17;
+}
+.footer p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.foot-title {
+  padding-top: 50px;
+  color: #5b5b5b;
+  font-size: 30px;
+  font-family: Manrope;
+}
+.foot-title span {
+  background: linear-gradient(#fba24f, #ff1e1e);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+  .home-text h1 {
+    font-size: 35px;
+  }
+  .home-text .cs {
+    color: gold;
+    background: linear-gradient(20deg, #eb2873, #a328eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .home-text .btn-a {
+    font-size: 25px;
+   background-color: #0000;
+    color: black;
+    font-weight: bold;
+    width: 170px;
+    transition: all 0.3s ease-out;
+  }
+  .home-text .btn-a:hover {
+    background: transparent;
+    color: linear-gradient(110deg, #eb2880, #28ebc7);
+   
+  }
+  .rec-text p {
+    font-size: 15px;
+  }
+  .food-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* .food-card .card {
+    max-width: 5ss00px;
+  } */
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 45.2%;
+  }
+  .food-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-text,
+  .home-img,
+  .about-img,
+  .about-text {
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px 0;
+  }
+  .home-text .btn-a {
+    margin: auto;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/shapes/Frame\ 58.jpg);
+    background-repeat: no-repeat;
+  }
+  .food-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer {
+    height: 30vh;
+    background-color: #584e4e;
+  }
+  .foot-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ffff;
+
+  }
+   .foot-title span{
+     color: #fff;
+   }
+  .footer p {
+    font-size: 17.5px;
+  }
+}
